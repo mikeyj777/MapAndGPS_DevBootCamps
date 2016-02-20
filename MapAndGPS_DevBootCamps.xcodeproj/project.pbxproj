@@ -13,6 +13,7 @@
 		63B5892F1C78D805007AD220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B5892D1C78D805007AD220 /* Main.storyboard */; };
 		63B589311C78D805007AD220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B589301C78D805007AD220 /* Assets.xcassets */; };
 		63B589341C78D805007AD220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B589321C78D805007AD220 /* LaunchScreen.storyboard */; };
+		63B5893C1C78E2EE007AD220 /* BootCampAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5893B1C78E2EE007AD220 /* BootCampAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		63B589301C78D805007AD220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B589331C78D805007AD220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B589351C78D805007AD220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B5893B1C78E2EE007AD220 /* BootCampAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootCampAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				63B589301C78D805007AD220 /* Assets.xcassets */,
 				63B589321C78D805007AD220 /* LaunchScreen.storyboard */,
 				63B589351C78D805007AD220 /* Info.plist */,
+				63B5893B1C78E2EE007AD220 /* BootCampAnnotation.swift */,
 			);
 			path = MapAndGPS_DevBootCamps;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				63B5892C1C78D805007AD220 /* LocationVC.swift in Sources */,
 				63B589281C78D805007AD220 /* AppDelegate.swift in Sources */,
+				63B5893C1C78E2EE007AD220 /* BootCampAnnotation.swift in Sources */,
 				63B5892A1C78D805007AD220 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

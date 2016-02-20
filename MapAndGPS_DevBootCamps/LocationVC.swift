@@ -18,12 +18,23 @@ class LocationVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     let locationManager = CLLocationManager()
     
+    let addresses = [
+        "48 W 17th St, New York, NY 10011",
+        "64 7th Ave, New York, NY 10011",
+        "5 Morton St, New York, NY 10014"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         map.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
+        
+        for address in addresses {
+            getPlaceMarkFromAddress(address)
+        }
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -70,6 +81,18 @@ class LocationVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
         if let loc = userLocation.location {
             centerMapOnLocation(loc)
+        }
+    }
+    
+    func getPlaceMarkFromAddress(address:String) {
+        CLGeocoder().geocodeAddressString(address) { (placemarks: [CLPlacemark]?, error: NSError?) -> Void in
+            
+            if let marks = placemarks where marks.count > 0 {
+                if let loc = marks[0].location {
+                    
+                }
+            }
+            
         }
     }
     
